@@ -13,8 +13,8 @@ pipeline {
         stage('Code Compilation') {
             steps {
                echo 'code compilation is in progress'
-               sh 'mvn clean Test...'
-               echo 'JUnit Test Case Check Completed !'
+               sh 'mvn clean test'
+               echo 'JUnit Test Case Check Completed!'
             }
         }
         stage('Code Package') {
