@@ -10,10 +10,10 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>yatra-ms</artifactId>
-	<version>v1.1</version>
+	<version>v0.0.1</version>
 	<name>yatra-ms</name>
 	<packaging>war</packaging>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Spring </description>
 	<url/>
 	<licenses>
 		<license/>
