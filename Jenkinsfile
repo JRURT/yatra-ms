@@ -1,5 +1,5 @@
 pipeline {
-    agent { label  'teamsA-jenkinsslave'}
+    agent { label  'any'}
 
     options{
         buildDiscarder(logRotator(numToKeepStr:'5', artifactNumToKeepStr:'5'))
