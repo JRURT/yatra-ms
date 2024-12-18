@@ -1,5 +1,5 @@
 pipeline {
-    agent { label  'teamsA-jenkinsslave'}
+    agent { label  'any'}
 
     options{
         buildDiscarder(logRotator(numToKeepStr:'5', artifactNumToKeepStr:'5'))
@@ -13,14 +13,14 @@ pipeline {
         stage('Code Compilation') {
             steps {
                echo 'code compilation is in progress'
-               sh 'mvn clean Test...'
-               echo 'JUnit Test Case Check Completed !'
+               sh 'mvn clean test'
+               echo 'JUnit Test Case Check Completed!'
             }
         }
         stage('Code Package') {
                     steps {
                        echo 'Creating WAR Artifact'
-                       sh 'mvn clean Package'
+                       sh 'mvn clean package'
                        echo 'Artifact Creation Completed !'
                     }
                 }
